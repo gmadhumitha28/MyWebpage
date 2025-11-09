@@ -1,0 +1,211 @@
+/* 🩵 Force consistent navy text across the site */
+body, p, h1, h2, h3, h4, h5, h6, li, a {
+  color: #060d6d !important;
+}
+
+/* Keep background white for clean look */
+body {
+  background: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+   background: linear-gradient(90deg, #d6e4ff, #ffe3dc); /* soft blue to soft coral */
+  color: #004aad; /* deep blue text for contrast */
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #ffbda7; /* subtle coral accent */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+ width: 150px;
+  height: 150px;
+  border-radius: 5px;       /* rounded corners instead of circle */
+  border: 2px solid white;
+  margin-bottom: 1rem;
+  object-fit: contain;       /* keeps full logo visible */
+  background-color: white;
+  padding: 4px;  
+}
+
+/* CARDS */
+.domains {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 2rem;
+  width: 300px;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+footer {
+  background: linear-gradient(90deg, #ffe3dc, #d6e4ff);
+  color: #004aad;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #ffbda7;
+  letter-spacing: 0.3px;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #76bafb; /* soft blue */
+  color: #060d6d; /* navy blue text */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+a.btn:hover {
+  background: #ff7373; /* light coral on hover */
+  color: #ffffff; /* white text when hovered for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Header + Footer text color consistency */
+header, footer {
+  color: #060d6d;
+}
+
+/* Footer links */
+footer a {
+  color: #060d6d;
+  text-decoration: underline;
+  font-weight: 500;
+}
+footer a:hover {
+  color: #ff7373;
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: linear-gradient(135deg, #f9fbff, #fff4f2); /* soft blue–coral blend */
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-me h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.about-me ul {
+  list-style-type: "✔ ";
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+  color: #060d6d;
+  line-height: 1.8;
+}
+
+.about-me li {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+.about-me strong {
+  color: #004aad;
+}
+
+/* 🌸 CONTACT FORM STYLING */
+.contact-form {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9fbff, #fff4f2); /* soft blue–coral */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form p {
+  text-align: center;
+  color: #060d6d;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #060d6d;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #cfd8ff;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #060d6d;
+  background: #ffffff;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #76bafb;
+  outline: none;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  background: #76bafb;
+  color: #060d6d;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ff7373;
+  color: white;
+}

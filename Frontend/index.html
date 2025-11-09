@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhumitha Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- 🌟 Meta Image for Social & SEO Preview -->
+<meta property="og:image" content="logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="logo.png">
+
+</head>
+<body>
+  <header class="main-header">
+    <img src="logo.png" alt="Madhumitha" class="profile-pic">
+    <h1>Welcome to Madhumitha’s Portfolio</h1>
+    <p>Hello, This is Madhumitha. I’m a QA Analyst and Content Creator who loves blending logic with creativity. Whether I’m designing a script or writing an article, my ultimate goal is always the same – delivering quality software or content.</p>
+  </header>
+
+<section class="about-me">
+  <h2>About Me</h2>
+  <ul>
+    <li>
+      I aspire to use my expertise and enthusiasm for <strong>Software Testing</strong> to support a creative team and guarantee the delivery of <strong>high quality applications</strong>.
+    </li>
+    <li>
+      Through my expertise in <strong>Java</strong>, <strong>Selenium</strong>, and <strong>software testing processes</strong> I assure the quality of the software and meet client requirements.
+    </li>
+    <li>
+     In addition to testing, I also am passionate about <strong>Technical Content Writing</strong>. I write simple and engaging content that help professionals and businesses understand the QA topics with ease.
+    </li>
+  </ul>
+</section>
+
+  <main class="domains">
+  <div class="card">
+    <h2>✅ Quality Assurance</h2>
+    <p>Discover automation projects, frameworks, and tools built to simplify testing in startups.</p>
+    <a href="qa.html" class="btn">Explore QA</a>
+  </div>
+
+  <div class="card">
+    <h2>✍️ Content Writing</h2>
+    <p>Read blogs and articles that turn technical QA topics into relatable, engaging stories.</p>
+    <a href="content.html" class="btn">Explore Content Writing</a>
+  </div>
+</main>
+
+<section class="contact-form">
+  <h2>Contact Me</h2>
+  <p>If you'd like to get in touch, please fill out the form below. I’ll respond soon!</p>
+
+ <form id="contactForm" method="POST" data-netlify="true" action="success.html">
+
+    <input type="hidden" name="form-name" value="contact">
+    
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+
+ <div class="form-group">
+      <label for="email">Contact</label>
+      <input type="contact" id="number" name="contact" placeholder="Your contact number">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+
+<p id="status"></p>
+
+  <script src="script.js"></script>
+  </form>
+</section>
+
+  <footer>
+    <p>© 2025 Madhumitha Govindarajan | Built with HTML & CSS | Hosted on Netlify</p>
+  </footer>
+</body>
+</html>
