@@ -1,18 +1,14 @@
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  };
-
-  const response = await fetch("https://gmadhumitha-api.onrender.com/contact", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(formData)
-  });
-
-  const result = await response.json();
-  document.getElementById("status").textContent = result.message;
-});
+fetch("/contact", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name, email, message })
+})
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      alert("Message sent successfully 💌");
+    } else {
+      alert("Failed to send message. Please try again.");
+    }
+  })
+  .catch(() => alert("Something went wrong!"));
